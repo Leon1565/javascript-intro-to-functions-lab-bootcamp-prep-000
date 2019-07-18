@@ -1,6 +1,3 @@
-var cantHearYou = 'I can\'t hear you!'
-var iCanHearYou = "YES INDEED!"
-
 function shout(string)
 {
   return string.toUpperCase()
@@ -19,12 +16,14 @@ function logWhisper(string)
 }
 function sayHiToGrandma(string)
 {
-  if(iCanHearYou !== iCanHearYou.toUpperCase)
+  var iCanHearYou = 'YES INDEED!'
+  var iCantHearYou = 'I can\'t hear you!'
+  if(string !== iCanHearYou.toUpperCase)
   {
     return iCanHearYou
   }
-  else
+  else if(string !== iCantHearYou.toUpperCase)
   {
-    return cantHearYou
+    return iCantHearYou
   }
 }
